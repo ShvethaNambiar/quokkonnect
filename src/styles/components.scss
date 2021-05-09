@@ -1,0 +1,49 @@
+@import './variables.scss';
+
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 3rem;
+    flex-direction: $direction ;
+}
+
+@mixin heading {
+    color: $headingcolor;
+    font-size: 2rem ;
+    margin-top: 2rem;
+    font-family: $headingfont; 
+    font-weight: 400;
+    font-size: 2.8rem;
+    padding-bottom: 4rem;
+}
+
+@mixin para-text{
+    text-align: left;
+    font-size: 1.1rem;
+    font-family: $textfont;
+    font-weight: 400;
+    width: 45% ;
+    line-height: 1.5rem;
+}
+@mixin svg-img {
+    width: 25rem;
+}
+
+//mobile
+@mixin mobile-flexCenter{
+    padding: 0 2rem;
+}
+@mixin mobile-para-text {
+    width: 100%;
+    padding: 0 0 1rem 0;
+}
+@mixin mobile-para-text {
+    width: 100%;
+    padding: 0 0 1rem 0;
+}
+@mixin mobile-svg {
+    width: 20rem;
+    padding-bottom: 2rem;
+}

@@ -1,3 +1,37 @@
+@import '../../styles/variables.scss';
+@import '../../styles/components.scss';
+
 #goal{
-    height: 100vh;
+    .goal-1{
+        @include flexCenter(row);
+        padding-bottom:4rem;
+    }
+    .goal-2{@include flexCenter(row-reverse)}
+    .goal-flex{
+        .goal-text{
+            @include para-text;
+            .heading{@include heading}
+        }
+        .svg-img{@include svg-img}
+    }
+    .link{
+        font: $textfont;
+        color: #EA2E45;
+        padding-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    #goal{
+        .goal-flex{
+            @include mobile-flexCenter;
+            .goal-text{@include mobile-para-text}
+            .svg-img{@include mobile-svg }
+        }
+    }
+    .link{
+        padding-top: 0.6rem;
+        text-align: center;
+    }
+
 }

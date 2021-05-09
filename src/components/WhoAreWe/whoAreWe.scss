@@ -1,3 +1,24 @@
+@import '../../styles/variables.scss';
+@import '../../styles/components.scss';
+
 #whoarewe{
-    height: 100vh;
+    .whoarewe-flex{
+        @include flexCenter(row);
+        .whoarewe-text{
+            @include para-text;
+            .heading{@include heading}
+        }
+        .svg-img{@include svg-img}
+    }
+}
+
+@media only screen and (max-width: 950px){
+    #whoarewe{
+        .whoarewe-flex{
+            @include mobile-flexCenter;
+            .whoarewe-text{@include mobile-para-text}
+            .svg-img{@include mobile-svg }
+        }
+    }
+
 }
