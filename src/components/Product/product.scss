@@ -7,9 +7,19 @@
         .heading{
             // @include flexLeft;
             padding-left: 9rem;
-            @include heading
-        };
-    };
+            @include heading;
+            padding-bottom: 3rem;
+        }
+        .product-text{
+            @include para-text;
+            padding-left: 9rem;
+            padding-bottom: 3rem;
+            width: 80%;
+            p{
+                margin: 0.5rem;
+            }
+        }
+    }
 
     .video{
         width: 45rem;
@@ -17,6 +27,7 @@
 
     .product-video{
         @include flexCenter(row);
+        padding-bottom: 3rem;
     }
 
     .video-border{
@@ -26,6 +37,17 @@
         box-shadow: inset -3px -4px 5px rgba(0, 0, 0, 0.17), inset 3px 4px 5px rgba(0, 0, 0, 0.17);
         border-radius: 8px;
     }
+
+    .product-img-1{
+        @include flexCenter(row);
+        padding: 2rem 9rem;
+        .feature-img{
+            display: flex;
+            justify-content: center;
+            width:23rem;
+        }
+        .svg-img{width: 17rem; padding:0.5rem 0;}
+    }
 }
 
 @media only screen and (max-width: 950px){
@@ -33,10 +55,27 @@
         .product-1{
             .heading{
                 padding-left: 2rem;
+                @include mobile-heading;
+            }
+
+            .product-text{
+                @include mobile-para-text;
+                padding-left: 2rem;
+                width: 80%;
             }
         }
         .video{
             width: 20rem;
+        }
+        .video-border{
+            padding: 1rem;
+        }
+        .product-img-1{
+            @include mobile-flexCenter;
+            .feature-img{
+                width:10rem;
+            }
+            .svg-img{width: 10rem;}
         }
     }
 }
