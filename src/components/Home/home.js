@@ -1,9 +1,10 @@
 import './home.scss'
+import Img from '../../assets/img.png'
 
 const Home=()=>{
     return(
         <div id="home">
-            <p>Home</p>
+            <img src={Img} alt="home img" />
         </div>
     )
 }
