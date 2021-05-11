@@ -45,7 +45,7 @@
         .feature-img{
             display: flex;
             justify-content: center;
-            width:23rem;
+            width:20rem;
         }
         .svg-img{width: 17rem; padding:0.5rem 0;}
     }
@@ -54,7 +54,9 @@
 @media only screen and (max-width: 950px){
     #product{    
         .product-1{
+            width: 100vw;
             .heading{
+                width: 70vw;
                 padding-left: 2rem;
                 @include mobile-heading;
             }
@@ -74,9 +76,9 @@
         .product-img-1{
             @include mobile-flexCenter;
             .feature-img{
-                width:10rem;
+                width:40vw;
             }
-            .svg-img{width: 10rem;padding:0.3rem 0;}
+            .svg-img{width: 35vw;padding:0.3rem 0;}
         }
     }
 }
