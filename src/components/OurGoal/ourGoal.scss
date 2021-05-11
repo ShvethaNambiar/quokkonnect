@@ -2,7 +2,7 @@
 @import '../../styles/components.scss';
 
 #goal{
-    padding-top:10rem;
+    padding-top:7rem;
     .goal-1{
         @include flexCenter(row);
         padding-bottom:4rem;
@@ -26,6 +26,7 @@
 
 @media only screen and (max-width: 950px){
     #goal{
+        padding-top: 2vh;
         .goal-flex{
             @include mobile-flexCenter;
             .goal-text{

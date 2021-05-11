@@ -1,5 +1,7 @@
 @media only screen and (min-width: 980px){
+    
     #home{
+        height: 100vh;
         .home-bg-mob{
             display: none;
         }
@@ -8,9 +10,28 @@
         }
     }
 }
-
+// @media only screen and (max-width: 1024px) and (min-height:1366px){
+//     #home{
+//         .home-bg-mob{
+//             display: flex;
+//             width: 100vw;
+//             position: absolute;
+//             top:0
+//         }
+//         .home-img-mob{
+//             display: flex;
+//             width: 100vw;
+//             position: absolute;
+//             top:0
+//         }
+//     }
+// }
 @media only screen and (max-width: 1024px){
     #home{
+        .sun1{display: none;}
+        .sun2{display: none;}
+        .sun3{display: none;}
+        .sun4{display: none;}
         height: 100vh;
         .home-img{
             display: none;
@@ -19,12 +40,14 @@
             display: none;
         }
         .home-bg-mob{
+            margin-top: -15vh;
             display: flex;
             width: 100vw;
             position: absolute;
             top:0
         }
         .home-img-mob{
+            margin-top: -15vh;
             display: flex;
             width: 100vw;
             position: absolute;
@@ -32,20 +55,22 @@
         }
         .home-main{
             width: 100vw;
+            height: 100vh;
             right:0;
-            top:80vh;
+            bottom:10vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding-right: 0rem;
             text-align: center;
+           
             .mainheading{
-                width: 100vw;
+                width: 95vw;
                 font-weight: 400;
                 font-size: 3rem;
             }
             .subheading{
-                width: 100vw;
+                width: 90vw;
                 font-weight: 300;
                 font-size: 2rem;
             }
@@ -61,6 +86,7 @@
     
     #home{
         max-width: 100%;
+        
         .mob-container{
             position: absolute;
             width: 100vw;
@@ -68,24 +94,26 @@
             margin: 0;
             overflow-x: hidden;
             .home-bg-mob{
+                margin-top: 0;
                 display: flex;
-                height: auto;
-                width:110%;
+                width:auto;
+                height:80vh;
                 position: absolute;
-                object-fit: cover;
                 top:0;
                 overflow: hidden;
             }
             .home-img-mob{
+                margin-top: 0;
                 display: flex;
-                height: auto;
-                width:110%;
+                width:auto;
+                height:90vh;
                 position: absolute;
                 top:0;
                 overflow: hidden;
             }
         }
         .home-main{
+            line-height: 2rem;
             .mainheading{
                 font-weight: 400;
                 font-size: 2rem;
