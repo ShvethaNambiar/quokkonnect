@@ -80,3 +80,13 @@
         }
     }
 }
+@media only screen and (max-width: 380px){
+    #product{
+        .video{
+            width: 18rem;
+        }
+        .video-border{
+            padding: 0.5rem;
+        }
+    }
+}

@@ -42,3 +42,10 @@
     }
 
 }
+@media only screen and (max-width: 420px){
+    #goal{
+        .goal-flex{
+            .svg-img{@include mobile-svg-small}
+        }
+    }
+}

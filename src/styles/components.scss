@@ -53,6 +53,9 @@
     padding-bottom: 2rem;
 }
 @mixin mobile-svg {
-    width: 20rem;
     padding-bottom: 2rem;
+}
+@mixin  mobile-svg-small {
+    width: 15rem;
+    
 }

@@ -25,3 +25,10 @@
     }
 
 }
+@media only screen and (max-width: 420px){
+    #whoarewe{
+        .whoarewe-flex{
+            .svg-img{@include mobile-svg-small}
+        }
+    }
+}
