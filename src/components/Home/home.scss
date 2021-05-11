@@ -1,0 +1,32 @@
+#home{
+    .home-img{
+        margin-top: -10rem;
+        width:36rem;
+        left: 0;
+        position: absolute;
+    }
+    .home-bg{
+        margin-top: -11em;
+        width: 37rem;
+    }
+    .home-main{
+        position: absolute;
+        right:0;
+        top:40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 2rem;
+        font-family: Roboto;
+        .mainheading{
+            font-weight: 400;
+            font-size: 3rem;
+        }
+        .subheading{
+            font-weight: 300px;
+            font-size: 2.5rem;
+        }
+    }
+    
+}
+
