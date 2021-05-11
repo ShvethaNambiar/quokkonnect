@@ -4,7 +4,8 @@ import Img from '../../assets/img.png'
 const Home=()=>{
     return(
         <div id="home">
-            <img src={Img} alt="home img" />
+            {/* <img src={Img} alt="home img" /> */}
+            Home
         </div>
     )
 }

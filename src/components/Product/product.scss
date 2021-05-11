@@ -3,12 +3,40 @@
 
 #product{
     .product-1{
-        @include flexLeft;
         padding-bottom:4rem;
-        .heading{@include heading};
+        .heading{
+            // @include flexLeft;
+            padding-left: 9rem;
+            @include heading
+        };
     };
 
+    .video{
+        width: 45rem;
+    }
+
     .product-video{
-        
+        @include flexCenter(row);
+    }
+
+    .video-border{
+        padding: 1.5rem;
+        width: fit-content;
+        background: #FFA4A4;
+        box-shadow: inset -3px -4px 5px rgba(0, 0, 0, 0.17), inset 3px 4px 5px rgba(0, 0, 0, 0.17);
+        border-radius: 8px;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    #product{    
+        .product-1{
+            .heading{
+                padding-left: 2rem;
+            }
+        }
+        .video{
+            width: 20rem;
+        }
     }
 }
