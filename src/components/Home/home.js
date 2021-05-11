@@ -21,8 +21,8 @@ const Home=()=>{
                 <img className="home-img" src={Homeimg} alt="home img" />
             </div>
             <div className="mob-container">
-                <img className="home-img-mob" src={HomeMobbg} alt="home img" />
-                <img className="home-bg-mob" src={HomeMob} alt="home img" />
+                <img className="home-bg-mob" src={HomeMobbg} alt="home img" />
+                <img className="home-img-mob" src={HomeMob} alt="home img" />
             </div>
             <div className="home-main">
                 <h2 className="mainheading">Welcome to Quokkonnect</h2>
