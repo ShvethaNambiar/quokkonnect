@@ -1,4 +1,4 @@
-@media only screen and (min-width: 520px){
+@media only screen and (min-width: 980px){
     #home{
         .home-bg-mob{
             display: none;
@@ -8,8 +8,10 @@
         }
     }
 }
-@media only screen and (max-width: 980px){
+
+@media only screen and (max-width: 1024px){
     #home{
+        height: 100vh;
         .home-img{
             display: none;
         }
@@ -28,54 +30,72 @@
             position: absolute;
             top:0
         }
+        .home-main{
+            width: 100vw;
+            right:0;
+            top:80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 0rem;
+            text-align: center;
+            .mainheading{
+                width: 100vw;
+                font-weight: 400;
+                font-size: 3rem;
+            }
+            .subheading{
+                width: 100vw;
+                font-weight: 300;
+                font-size: 2rem;
+            }
+            
+            .main-logo{
+                display: none;
+            }
+        }
     }
 }
+
 @media only screen and (max-width: 420px){
     
     #home{
-        width: 100vw;
-        height: 100vh;
+        max-width: 100%;
         .mob-container{
+            position: absolute;
             width: 100vw;
+            height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
             .home-bg-mob{
                 display: flex;
-                height: 100vh;
-                width:auto;
+                height: auto;
+                width:110%;
                 position: absolute;
+                object-fit: cover;
                 top:0;
                 overflow: hidden;
             }
             .home-img-mob{
                 display: flex;
-                height: 88vh;
-                width:auto;
+                height: auto;
+                width:110%;
                 position: absolute;
                 top:0;
                 overflow: hidden;
             }
         }
-        
         .home-main{
-            width: 90vw;
-            top:90vh;
-            align-items: center;
-            padding-right: 0;
-            text-align: center;
-            right: auto; left:auto;
             .mainheading{
-                width: 100vw;
                 font-weight: 400;
                 font-size: 2rem;
             }
             .subheading{
-                width: 100vw;
                 font-weight: 300;
                 font-size: 1.2rem;
             }
-            .main-logo{
-                display: none;
-            }
         }
+        
     }
     
 }
