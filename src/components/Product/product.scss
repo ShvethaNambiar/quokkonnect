@@ -2,18 +2,19 @@
 @import '../../styles/components.scss';
 
 #product{
+    padding-top: 5rem;
     .product-1{
         padding-bottom:4rem;
         .heading{
             // @include flexLeft;
             padding-left: 9rem;
             @include heading;
-            padding-bottom: 3rem;
+            padding-bottom: 1rem;
         }
         .product-text{
             @include para-text;
             padding-left: 9rem;
-            padding-bottom: 3rem;
+            padding-bottom: 4rem;
             width: 80%;
             p{
                 margin: 0.5rem;
@@ -27,7 +28,7 @@
 
     .product-video{
         @include flexCenter(row);
-        padding-bottom: 3rem;
+        padding-bottom: 4rem;
     }
 
     .video-border{
@@ -75,7 +76,7 @@
             .feature-img{
                 width:10rem;
             }
-            .svg-img{width: 10rem;}
+            .svg-img{width: 10rem;padding:0.3rem 0;}
         }
     }
 }
