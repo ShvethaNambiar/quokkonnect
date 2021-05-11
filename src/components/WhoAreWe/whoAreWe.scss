@@ -2,6 +2,7 @@
 @import '../../styles/components.scss';
 
 #whoarewe{
+    padding-bottom: 5rem;
     .whoarewe-flex{
         @include flexCenter(row);
         .whoarewe-text{
