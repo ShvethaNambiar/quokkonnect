@@ -25,7 +25,10 @@
     #goal{
         .goal-flex{
             @include mobile-flexCenter;
-            .goal-text{@include mobile-para-text}
+            .goal-text{
+                @include mobile-para-text;
+                .heading{@include mobile-heading}
+            }
             .svg-img{@include mobile-svg }
         }
     }

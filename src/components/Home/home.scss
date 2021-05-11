@@ -1,13 +1,14 @@
 #home{
+    height: 100vh;
     .home-img{
-        margin-top: -10rem;
-        width:36rem;
+        // margin-top: -10rem;
+        height: 99vh;
         left: 0;
         position: absolute;
     }
     .home-bg{
-        margin-top: -11em;
-        width: 37rem;
+        // margin-top: -11em;
+        height:100vh;
     }
     .home-main{
         position: absolute;
@@ -23,7 +24,7 @@
             font-size: 3rem;
         }
         .subheading{
-            font-weight: 300px;
+            font-weight: 300;
             font-size: 2.5rem;
         }
     }

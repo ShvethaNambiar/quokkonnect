@@ -16,7 +16,10 @@
     #whoarewe{
         .whoarewe-flex{
             @include mobile-flexCenter;
-            .whoarewe-text{@include mobile-para-text}
+            .whoarewe-text{
+                @include mobile-para-text;
+                .heading{@include mobile-heading}
+            }
             .svg-img{@include mobile-svg }
         }
     }
