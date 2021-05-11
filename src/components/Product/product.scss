@@ -1,3 +1,14 @@
+@import '../../styles/variables.scss';
+@import '../../styles/components.scss';
+
 #product{
-    height: 100vh;
+    .product-1{
+        @include flexLeft;
+        padding-bottom:4rem;
+        .heading{@include heading};
+    };
+
+    .product-video{
+        
+    }
 }

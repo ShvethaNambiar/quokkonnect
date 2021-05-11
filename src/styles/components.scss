@@ -9,6 +9,12 @@
     flex-direction: $direction ;
 }
 
+@mixin flexLeft{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 9rem;
+}
+
 @mixin heading {
     color: $headingcolor;
     font-size: 2rem ;
@@ -28,7 +34,7 @@
     line-height: 1.5rem;
 }
 @mixin svg-img {
-    width: 25rem;
+    width: 20rem;
 }
 
 //mobile
