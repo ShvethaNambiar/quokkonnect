@@ -12,10 +12,10 @@ import HomeMobbg from '../../assets/home-back-mobile.svg'
 const Home=()=>{
     return(
         <div id="home">
-        <img className="sun1" src={Sun}></img>
-        <img className="sun2" src={Sun}></img>
-        <img className="sun3" src={Sun}></img>
-        <img className="sun4" src={Sun}></img>
+            <img className="sun1" src={Sun}></img>
+            <img className="sun2" src={Sun}></img>
+            <img className="sun3" src={Sun}></img>
+            <img className="sun4" src={Sun}></img>
             <div>
                 <img className="home-bg" src={Homebg} alt="home img" />
                 <img className="home-img" src={Homeimg} alt="home img" />
