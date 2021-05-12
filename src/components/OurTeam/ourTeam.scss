@@ -2,7 +2,7 @@
 @import '../../styles/components.scss';
 
 .member-card{
-    width: 30%;
+    width: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,16 +15,14 @@
         overflow: hidden;
     }
 
-    &:hover .card-container{
-        // transform: scale(1.2);
-
-        .img{
-            // transform: scale(1);
-            filter: blur(1px) brightness(60%);
-        }
-
-        .links{
-            display: inline;
+    .card-container{
+        &:hover {
+            .img{
+                filter: blur(1px) brightness(60%);
+            }
+            .links{
+                display: inline;
+            }
         }
     }
 
@@ -32,7 +30,6 @@
         position: relative;
         width: 15rem;
         height: 16rem;
-        // height: 15rem;
         overflow: hidden;
         
 
@@ -101,5 +98,140 @@
     .layout{
         @include flexCenter(row);
         padding: 0 12rem 4rem 12rem;
+    }
+}
+
+@media only screen and (max-width: 1350px){
+    .member-card{
+        width: 15rem;
+
+        .img-container{
+            width: 13rem;
+            height: 14rem;
+            
+            .links{
+                
+                a{
+                    font-size: 2.7rem;
+                    &:not(:last-child){
+                        margin-right: 0.8rem;
+                    }
+                }
+            }
+        }
+        .details{
+            width: 13rem;
+
+            .name{
+                font-size: 1rem;
+                margin-top: 0.5rem;
+                margin-bottom: 0.1rem;
+            }
+            .country{
+                margin-bottom: 0.2rem;
+                color: rgb(97, 97, 97)
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1120px){
+    #ourteam{
+        .layout{
+            padding: 0 7rem 4rem 7rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .member-card{
+        width: 13rem;
+        .img-container{
+            width: 11rem;
+            height: 12rem;
+            .links{
+                top: 45%;
+                left: 13%;
+                a{
+                    font-size: 2.4rem;
+                    &:not(:last-child){
+                        margin-right: 0.8rem;
+                    }
+                }
+            }
+        }
+        .details{
+            width: 11rem;
+        }
+    }
+    #ourteam{
+        .layout{
+            padding: 0 5rem 4rem 5rem;
+        }
+        .heading{
+            @include mobile-heading;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .member-card{
+        width: 11rem;
+        .img-container{
+            width: 9rem;
+            height: 10rem;
+            .links{
+                top: 45%;
+                left: 11%;
+                a{
+                    font-size: 2rem;
+                    &:not(:last-child){
+                        margin-right: 0.8rem;
+                    }
+                }
+            }   
+        }
+        .details{
+            width: 9rem;
+        }
+    }
+    #ourteam{
+        .layout{
+            padding: 0 2rem 3rem 2rem;
+        }
+        .heading{
+            @include mobile-heading;
+        }
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .member-card{
+        width: 9rem;
+        .img-container{
+            width: 8rem;
+            height: 9rem;
+            .links{
+                top: 43%;
+                left: 12%;
+                a{
+                    font-size: 1.8rem;
+                    &:not(:last-child){
+                        margin-right: 0.6rem;
+                    }
+                }
+            }   
+        }
+        .details{
+            width: 8rem;
+        }
+    }
+    #ourteam{
+        .layout{
+            padding: 0 2rem 3rem 2rem;
+        }
+        .heading{
+            @include mobile-heading;
+        }
     }
 }
