@@ -37,7 +37,7 @@ const Faq = () => {
 
     return (
         <div className="faq-container">
-            {/* <Curve_1 /> */}
+            <Curve_1 />
             <div id="faq">
                 <h2 className="heading">FAQ's</h2>
                 <div >
@@ -46,7 +46,7 @@ const Faq = () => {
                     ))}
                 </div>
             </div>
-            {/* <Curve_2 /> */}
+            <Curve_2 />
         </div>
     );
 };

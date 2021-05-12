@@ -91,13 +91,14 @@
 .faq-container {
     background-color: #FFD8D8;
     width: 100vw;
-    overflow-x: hidden;
+    overflow-x:hidden;
+    margin: 0;
 
     #faq {
         background-color: #FFD8D8;
         margin-top: -4rem;
         padding-left: 9rem;
-        width: 90vw;
+        width: 99vw;
 
         .heading {
             @include heading;
