@@ -9,9 +9,9 @@ import OurTeam from '../components/OurTeam/ourTeam'
 import ContactUs from '../components/ContactUs/contactUs'
 import NavBar from '../components/Navbar/navbar'
 
-const HomePage=()=>{
-    return(
-        <div>            
+const HomePage = () => {
+    return (
+        <div>
             {/* <NavBar /> */}
             <Home />
             <OurGoal />
@@ -19,7 +19,7 @@ const HomePage=()=>{
             <Faq />
             <WhoAreWe />
             <OurTeam />
-            <ContactUs />            
+            <ContactUs />
         </div>
     )
 }
