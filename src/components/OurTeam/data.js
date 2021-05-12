@@ -1,4 +1,4 @@
-import Shvetha from '../../assets/shvetha.png'
+import Shvetha from '../../assets/shvetha.jpg'
 import Yash from '../../assets/yash.jpg'
 import Sam from '../../assets/Sam.jpg'
 
@@ -42,31 +42,31 @@ const data = [
         country:"Hong Kong",
         image: Shvetha,
         links: {
-            linkedin: "",
-            instagram: "",
-            email: ""
+            linkedin: "https://www.linkedin.com/in/jadie-luo-3b657176/",
+            instagram: "https://www.instagram.com/onesmolblob/",
+            email: "mailto:"
         },
     },
     {
         id: 5,
-        name: "Anita Floredi",
+        name: "Anita Floridi",
         country:"Italy",
-        image: Shvetha,
+        image: Yash,
         links: {
             linkedin: "",
-            instagram: "",
-            email: ""
+            instagram: "https://www.instagram.com/anitafloridi/",
+            email: "mailto:"
         },
     },
     {
         id: 6,
-        name: "Kartika Fissendri",
+        name: "Kartika Resiandi",
         country:"Japan",
-        image: Shvetha,
+        image: Sam,
         links: {
-            linkedin: "",
-            instagram: "",
-            email: ""
+            linkedin: "https://www.linkedin.com/in/kartika-findra-resiandi-729b17118/",
+            instagram: "https://www.instagram.com/kartikafindra/",
+            email: "mailto:"
         },
     }
 ]
