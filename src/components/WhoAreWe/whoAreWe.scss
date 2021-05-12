@@ -1,35 +1,55 @@
 @import '../../styles/variables.scss';
 @import '../../styles/components.scss';
 
-#whoarewe{
-    padding-bottom: 5rem;
-    .whoarewe-flex{
+#whoarewe {
+    background-color: #fff;
+    margin-top: -1rem;
+    padding-top: 0.5rem;
+
+    .whoarewe-flex {
         @include flexCenter(row);
-        .whoarewe-text{
+
+        .whoarewe-text {
             @include para-text;
-            .heading{@include heading}
-        }
-        .svg-img{@include svg-img}
-    }
-}
 
-@media only screen and (max-width: 950px){
-    #whoarewe{
-        .whoarewe-flex{
-            @include mobile-flexCenter;
-            .whoarewe-text{
-                @include mobile-para-text;
-                .heading{@include mobile-heading}
+            .heading {
+                @include heading
             }
-            .svg-img{@include mobile-svg }
+        }
+
+        .svg-img {
+            @include svg-img
+        }
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    #whoarewe {
+        .whoarewe-flex {
+            @include mobile-flexCenter;
+
+            .whoarewe-text {
+                @include mobile-para-text;
+
+                .heading {
+                    @include mobile-heading
+                }
+            }
+
+            .svg-img {
+                @include mobile-svg
+            }
         }
     }
 
 }
-@media only screen and (max-width: 420px){
-    #whoarewe{
-        .whoarewe-flex{
-            .svg-img{@include mobile-svg-small}
+
+@media only screen and (max-width: 420px) {
+    #whoarewe {
+        .whoarewe-flex {
+            .svg-img {
+                @include mobile-svg-small
+            }
         }
     }
 }
