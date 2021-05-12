@@ -18,14 +18,14 @@ const Faq = () => {
 
     return (
         <div id="faq">
-            {FaqData.map((data) => (
+            {/* {FaqData.map((data) => (
                 <div>
                     <button onClick={handleClick(data.id)} className="accordion" >{data.question}</button>
                     <div className="panel">
                         <p >{data.answer}</p>
                     </div>
                 </div>
-            ))}
+            ))} */}
         </div>
     );
 };
