@@ -1,51 +1,78 @@
 @import '../../styles/variables.scss';
 @import '../../styles/components.scss';
 
-#goal{
-    padding-top:7rem;
-    .goal-1{
+#goal {
+    padding-top: 7rem;
+
+    .goal-1 {
         @include flexCenter(row);
-        padding-bottom:4rem;
+        padding-bottom: 4rem;
     }
-    .goal-2{@include flexCenter(row-reverse)}
-    .goal-flex{
-        .goal-text{
+
+    .goal-2 {
+        @include flexCenter(row-reverse)
+    }
+
+    .goal-flex {
+        .goal-text {
             @include para-text;
-            p{padding-bottom: 0.5rem;}
-            .heading{@include heading}
-            .link{
+
+            p {
+                padding-bottom: 0.5rem;
+            }
+
+            .heading {
+                @include heading
+            }
+
+            .link {
                 font: $textfont;
                 color: #EA2E45;
                 text-decoration: none;
             }
         }
-        .svg-img{@include svg-img}
-    }
-    
-}
 
-@media only screen and (max-width: 950px){
-    #goal{
-        padding-top: 2vh;
-        .goal-flex{
-            @include mobile-flexCenter;
-            .goal-text{
-                @include mobile-para-text;
-                .heading{@include mobile-heading}
-            }
-            .svg-img{@include mobile-svg }
+        .svg-img {
+            @include svg-img
         }
     }
-    .link{
+
+}
+
+@media only screen and (max-width: 950px) {
+    #goal {
+        padding-top: 2vh;
+
+        .goal-flex {
+            @include mobile-flexCenter;
+
+            .goal-text {
+                @include mobile-para-text;
+
+                .heading {
+                    @include mobile-heading
+                }
+            }
+
+            .svg-img {
+                @include mobile-svg
+            }
+        }
+    }
+
+    .link {
         padding-top: 0.6rem;
         text-align: center;
     }
 
 }
-@media only screen and (max-width: 420px){
-    #goal{
-        .goal-flex{
-            .svg-img{@include mobile-svg-small}
+
+@media only screen and (max-width: 420px) {
+    #goal {
+        .goal-flex {
+            .svg-img {
+                @include mobile-svg-small
+            }
         }
     }
 }
