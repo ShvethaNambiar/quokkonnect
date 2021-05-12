@@ -1,37 +1,41 @@
 @import '../../styles/variables.scss';
 @import '../../styles/components.scss';
 
-#product{
+#product {
     padding-top: 5rem;
-    .product-1{
-        padding-bottom:4rem;
-        .heading{
+
+    .product-1 {
+        padding-bottom: 4rem;
+
+        .heading {
             // @include flexLeft;
             padding-left: 9rem;
             @include heading;
             padding-bottom: 1rem;
         }
-        .product-text{
+
+        .product-text {
             @include para-text;
             padding-left: 9rem;
             padding-bottom: 4rem;
             width: 80%;
-            p{
+
+            p {
                 margin: 0.5rem;
             }
         }
     }
 
-    .video{
+    .video {
         width: 45rem;
     }
 
-    .product-video{
+    .product-video {
         @include flexCenter(row);
         padding-bottom: 4rem;
     }
 
-    .video-border{
+    .video-border {
         padding: 1.5rem;
         width: fit-content;
         background: #FFA4A4;
@@ -39,55 +43,75 @@
         border-radius: 8px;
     }
 
-    .product-img-1{
+    .product-img-1 {
         @include flexCenter(row);
         padding: 2rem 9rem;
-        .feature-img{
+
+        .feature-img {
             display: flex;
             justify-content: center;
-            width:20rem;
+            width: 20rem;
         }
-        .svg-img{width: 17rem; padding:0.5rem 0;}
+
+        .svg-img {
+            width: 17rem;
+            padding: 0.5rem 0;
+        }
     }
 }
 
-@media only screen and (max-width: 950px){
-    #product{    
-        .product-1{
+@media only screen and (max-width: 950px) {
+    #product {
+        padding-top: 1rem;
+
+        .product-1 {
             width: 100vw;
-            .heading{
+
+            .heading {
                 width: 70vw;
                 padding-left: 2rem;
                 @include mobile-heading;
             }
 
-            .product-text{
+            .product-text {
                 @include mobile-para-text;
                 padding-left: 2rem;
                 width: 80%;
             }
         }
-        .video{
+
+        .video {
             width: 20rem;
         }
-        .video-border{
+
+        .video-border {
             padding: 1rem;
         }
-        .product-img-1{
+
+        .product-img-1 {
             @include mobile-flexCenter;
-            .feature-img{
-                width:40vw;
+
+            .feature-img {
+                width: 40vw;
             }
-            .svg-img{width: 35vw;padding:0.3rem 0;}
+
+            .svg-img {
+                width: 35vw;
+                padding: 0.3rem 0;
+            }
         }
     }
 }
-@media only screen and (max-width: 380px){
-    #product{
-        .video{
+
+@media only screen and (max-width: 380px) {
+    #product {
+        padding-top: 2rem;
+
+        .video {
             width: 18rem;
         }
-        .video-border{
+
+        .video-border {
             padding: 0.5rem;
         }
     }
