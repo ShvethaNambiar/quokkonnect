@@ -1,3 +1,9 @@
+@import '../../styles/variables.scss';
+@import '../../styles/components.scss';
+
 #ourteam{
-    height: 100vh;
+    .heading{
+        @include flexCenter(row);
+        @include heading;
+    }
 }
