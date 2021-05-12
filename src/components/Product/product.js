@@ -26,8 +26,6 @@ const Product=()=>{
                     <div className="feature-img"><img className="svg-img" src={Product1}></img></div>
                     <div className="feature-img"><img className="svg-img" src={Product2}></img></div>
                     <div className="feature-img"><img className="svg-img" src={Product3}></img></div>
-                {/* </div> */}
-                {/* <div className="product-img-1"> */}
                     <div className="feature-img"><img className="svg-img" src={Product4}></img></div>
                     <div className="feature-img"><img className="svg-img" src={Product5}></img></div>
                     <div className="feature-img"><img className="svg-img" src={Product6}></img></div>

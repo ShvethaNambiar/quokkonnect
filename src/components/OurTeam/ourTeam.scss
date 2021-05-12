@@ -2,10 +2,11 @@
 @import '../../styles/components.scss';
 
 .member-card{
-    width: 15%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem 0;
 
     .card-container{
         width: fit-content;
@@ -14,7 +15,7 @@
         overflow: hidden;
     }
 
-    &:hover .img-container{
+    &:hover .card-container{
         // transform: scale(1.2);
 
         .img{
@@ -29,8 +30,8 @@
 
     .img-container{
         position: relative;
-        width: 10rem;
-        height: 11rem;
+        width: 15rem;
+        height: 16rem;
         // height: 15rem;
         overflow: hidden;
         
@@ -41,38 +42,53 @@
 
         .links{
             position: absolute;
-            top: 40%;
-            left: 18%;
+            top: 45%;
+            left: 17%;
             display: none;
 
             a{
                 color: white;
                 text-decoration: none;
-                font-size: 1.9rem;
+                font-size: 3rem;
                 transition: all .2s;
+                cursor: pointer;
 
                 &:not(:last-child){
-                    margin-right: 0.7rem;
+                    margin-right: 1rem;
                 }
+            }
+
+            .linkedin:hover{
+                color: #b4e7ff;
+            }
+
+            .instagram:hover{
+                color: #b4e7ff;
+            }
+
+            .email:hover{
+                color: #b4e7ff;
             }
         }
     }
 
     .details{
-        width: 10rem;
-        background-color: #FFF1F1;
+        width: 15rem;
+        background-color: #FFD8D8;
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-family: Roboto;
+        font-family: $textfont;
         
         .name{
-            font-weight: 400;
+            font-size: 1.3rem;
             margin-top: 0.7rem;
             margin-bottom: 0.1rem;
         }
         .country{
             font-weight: 100;
+            margin-bottom: 0.3rem;
+            color: rgb(97, 97, 97)
         }
     }
 }
@@ -81,5 +97,9 @@
     .heading{
         @include flexCenter(row);
         @include heading;
+    }
+    .layout{
+        @include flexCenter(row);
+        padding: 0 12rem 4rem 12rem;
     }
 }
