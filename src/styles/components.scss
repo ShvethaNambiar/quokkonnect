@@ -65,3 +65,19 @@
     width: 15rem;
 
 }
+
+//contact us
+
+@mixin inputbox($height) {
+    font-family: $textfont;
+    font-size: 1rem;
+    background-color: #ffffff;
+    text-align: left;
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem;
+    width: 90%;
+    height: $height;
+    text-align: start;
+    margin: 0.2rem 0;
+}
