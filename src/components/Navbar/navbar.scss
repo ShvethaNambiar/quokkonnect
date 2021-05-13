@@ -29,6 +29,7 @@
 
     .nav-links{
         margin-right: 3rem;
+        z-index: 9999;
 
         .nav-option{
             color: $fontcolor;
@@ -47,27 +48,27 @@
 
     .nav-btn{
         background: none;
-        height: 2rem;
-        width: 2rem;
+        height: 3rem;
+        width: 1rem;
         border-radius: 50%;
         border: none;
         outline: none;
         text-align: center;
         cursor: pointer;
         position: absolute;
-        right: 6rem;
+        right: 4rem;
         z-index: 99;
         -webkit-tap-highlight-color: transparent;
 
         .nav-icon{
             position: relative;
-            margin-top: 1.5rem;
+            margin-top: 1rem;
 
             &,
             &::before,
             &::after {
-                width: 3rem;
-                height: 3px;
+                width: 2rem;
+                height: 2.5px;
                 background-color: black;
                 display: inline-block;
                 transition: all .2s;
