@@ -1,6 +1,9 @@
-import Shvetha from '../../assets/shvetha.jpg'
-import Yash from '../../assets/yash.jpg'
-import Sam from '../../assets/Sam.jpg'
+import Shvetha from '../../assets/photos/shvetha.jpg'
+import Yash from '../../assets/photos/yash.jpg'
+import Sam from '../../assets/photos/sam.jpg'
+import Jadie from '../../assets/photos/jadie.JPG'
+import Anita from '../../assets/photos/anita.jpeg'
+import Kartika from '../../assets/photos/kartika.jpg'
 
 const data = [
     {
@@ -40,18 +43,18 @@ const data = [
         id: 4,
         name: "Jadie Luo",
         country:"Hong Kong",
-        image: Shvetha,
+        image: Jadie,
         links: {
             linkedin: "https://www.linkedin.com/in/jadie-luo-3b657176/",
             instagram: "https://www.instagram.com/onesmolblob/",
-            email: "mailto:"
+            email: "mailto:luoj2@carleton.edu"
         },
     },
     {
         id: 5,
         name: "Anita Floridi",
         country:"Italy",
-        image: Yash,
+        image: Anita,
         links: {
             linkedin: "",
             instagram: "https://www.instagram.com/anitafloridi/",
@@ -62,7 +65,7 @@ const data = [
         id: 6,
         name: "Kartika Resiandi",
         country:"Japan",
-        image: Sam,
+        image: Kartika,
         links: {
             linkedin: "https://www.linkedin.com/in/kartika-findra-resiandi-729b17118/",
             instagram: "https://www.instagram.com/kartikafindra/",

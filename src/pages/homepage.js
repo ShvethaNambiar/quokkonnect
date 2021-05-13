@@ -12,7 +12,7 @@ import NavBar from '../components/Navbar/navbar'
 const HomePage = () => {
     return (
         <div className="home-page">
-            {/* <NavBar /> */}
+            <NavBar />
             <Home />
             <OurGoal />
             <Product />
