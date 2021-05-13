@@ -20,11 +20,11 @@ const NavBar = () => {
     }, [location])
 
     // Visibility of NavBar
-    useEffect(() => {
-        setTimeout(() => {
-            setVisible(true)
-        }, 700)
-    }, [])
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setVisible(true)
+    //     }, 700)
+    // }, [])
 
     // Scroll Function
     const scrollTo = (section) => {
@@ -82,7 +82,8 @@ const NavBar = () => {
     }
 
     return (
-        <nav className='navbar' style={{ opacity: `${visible ? '1' : '0'}`, top: `${visible ? '0' : '-7rem'}` }}>
+        <nav className='navbar' >
+            {/* style={{ opacity: `${visible ? '1' : '0'}`, top: `${visible ? '0' : '-7rem'}` }} */}
             <Link className='nav-logo' to='/'>
                 <img src={logo} alt='logo' />
             </Link>

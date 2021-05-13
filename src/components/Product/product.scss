@@ -2,7 +2,7 @@
 @import '../../styles/components.scss';
 
 #product {
-    padding-top: 5rem;
+    margin-top: 5rem;
 
     .product-1 {
         padding-bottom: 4rem;
@@ -62,7 +62,7 @@
 
 @media only screen and (max-width: 950px) {
     #product {
-        padding-top: 1rem;
+        margin-top: 1rem;
 
         .product-1 {
             width: 100vw;
@@ -105,7 +105,7 @@
 
 @media only screen and (max-width: 380px) {
     #product {
-        padding-top: 2rem;
+        margin-top: 2rem;
 
         .video {
             width: 18rem;
