@@ -1,3 +1,18 @@
-#contactus{
-    height: 100vh;
+#contactus {
+    min-height: 100vh;
+    position: relative;
+
+    .contact-us-img {
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .contact-us-bg {
+        height: 100vh;
+        position: absolute;
+        right: 3vw;
+        bottom: 0;
+    }
 }
