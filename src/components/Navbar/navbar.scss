@@ -67,8 +67,8 @@
             &,
             &::before,
             &::after {
-                width: 2rem;
-                height: 2.5px;
+                width: 2.4rem;
+                height: 2.6px;
                 background-color: black;
                 display: inline-block;
                 transition: all .2s;
@@ -81,16 +81,16 @@
                 left: 0;
             }
 
-            &::before { top: -.8rem; }
-            &::after { top: .8rem; }
+            &::before { top: -.7rem; }
+            &::after { top: .7rem; }
         }
 
         &:hover .nav-icon::before{
-            top: -1rem;
+            top: -0.8rem;
         }
 
         &:hover .nav-icon::after{
-            top: 1rem;
+            top: 0.8rem;
         }
     }
 
@@ -137,12 +137,12 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 2.5rem;
-            line-height: 20px;
+            font-size: 1.7rem;
+            line-height: 10px;
             -webkit-tap-highlight-color: transparent;
 
             &:not(:last-child){
-                margin-bottom: 6rem;
+                margin-bottom: 5.5rem;
             }
 
             &:hover{
@@ -164,20 +164,47 @@
 
 }
 
-@media only screen and (min-width: 950px){
+@media only screen and (min-width: 1030px){
     .nav-btn{
         display: none;
         visibility: hidden;
     }
 }
 
-@media only screen and (max-width: 950px){
-    .nav-links{
-        display: none;
-        visibility: hidden;
+@media only screen and (max-width: 1030px){
+    .navbar{
+        .nav-links{
+            display: none;
+            visibility: hidden;
+        }
+    
+        .checkbox{
+            display: block;
+        }
     }
+}
 
-    .checkbox{
-        display: block;
+@media only screen and (max-height: 650px){
+    .navbar{
+        .nav-visible{
+            a{
+                &:not(:last-child){
+                    margin-bottom: 4rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-height: 1200px){
+    .navbar{
+        .nav-visible{
+            a{
+                font-size: 2.5rem;
+                &:not(:last-child){
+                    margin-bottom: 8rem;
+                }
+            }
+        }
     }
 }
