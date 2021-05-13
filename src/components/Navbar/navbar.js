@@ -9,6 +9,26 @@ import logo from '../../assets/LOGO.svg'
 const NavBar = () => {
     const location = useLocation()
     const [visible, setVisible] = useState(false)
+    let listener = null
+    const [scrollOnTop, setscrollOnTop] = useState(true)
+
+    useEffect(() => {
+        listener = document.addEventListener("scroll", e => {
+            var scrolled = document.scrollingElement.scrollTop
+            if (scrolled >= 120) {
+                if (scrollOnTop != false) {
+                    setscrollOnTop(false)
+                }
+            } else {
+                if (scrollOnTop != true) {
+                    setscrollOnTop(true)
+                }
+            }
+        })
+        return () => {
+        document.removeEventListener("scroll", listener)
+        }
+    }, [scrollOnTop])
 
     // Navigation
     useEffect(() => {
@@ -82,9 +102,9 @@ const NavBar = () => {
     }
 
     return (
-        <nav className='navbar' >
+        <nav className='navbar' style={{backgroundColor: `${scrollOnTop?'transparent':'#FFD8D8'}`}}>
             {/* style={{ opacity: `${visible ? '1' : '0'}`, top: `${visible ? '0' : '-7rem'}` }} */}
-            <Link className='nav-logo' to='/'>
+            <Link className='nav-logo' style={{opacity: `${scrollOnTop?'0':'1'}`}} to='/'>
                 <img src={logo} alt='logo' />
             </Link>
             <div className='nav-links' id='navbar'>

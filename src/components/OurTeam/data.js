@@ -46,7 +46,7 @@ const data = [
         image: Jadie,
         links: {
             linkedin: "https://www.linkedin.com/in/jadie-luo-3b657176/",
-            instagram: "https://www.instagram.com/onesmolblob/",
+            instagram: "",
             email: "mailto:luoj2@carleton.edu"
         },
     },
@@ -58,7 +58,7 @@ const data = [
         links: {
             linkedin: "",
             instagram: "https://www.instagram.com/anitafloridi/",
-            email: "mailto:"
+            email: "mailto:anitafloridi.1@gmail.com"
         },
     },
     {
@@ -69,7 +69,7 @@ const data = [
         links: {
             linkedin: "https://www.linkedin.com/in/kartika-findra-resiandi-729b17118/",
             instagram: "https://www.instagram.com/kartikafindra/",
-            email: "mailto:"
+            email: "mailto:kartindra@gmail.com"
         },
     }
 ]

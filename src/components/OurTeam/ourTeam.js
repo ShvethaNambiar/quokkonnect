@@ -13,13 +13,13 @@ const TeamCard=({member})=>{
                 <figure className="img-container">
                     <img src={member.image} alt={member.name} className="img" />
                     <figcaption className="links    ">
-                        <a className='linkedin' href={member.links.linkedin} target='_blank' rel='noopener noreferrer'>
+                        <a className='linkedin' href={member.links.linkedin==""?null:member.links.linkedin} target='_blank' rel='noopener noreferrer'>
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>
-                        <a className='instagram' href={member.links.instagram} target='_blank' rel='noopener noreferrer'>
+                        <a className='instagram' href={member.links.instagram==""?null:member.links.instagram} target='_blank' rel='noopener noreferrer'>
                             <FontAwesomeIcon icon={faInstagram} />
                         </a>
-                        <a className='email' href={member.links.email} target='_blank' rel='noopener noreferrer'>
+                        <a className='email' href={member.links.email==""?null:member.links.email} target='_blank' rel='noopener noreferrer'>
                             <FontAwesomeIcon icon={faEnvelope} />
                         </a>
                     </figcaption>
