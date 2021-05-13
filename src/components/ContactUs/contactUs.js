@@ -31,7 +31,7 @@ const ContactUs = () => {
                 <input name="usersurname" id="surname" type="text" input={usersurname} onChange={e => setUsersurname(e.target.value)} placeholder="Surname" required />
                 <input name="userEmail" id="email" type="email" input={userEmail} onChange={e => setUseremail(e.target.value)} placeholder="E-mail" required />
                 <textarea rows="4" cols="50" name="userMessage" id="message" type="text" input={userMessage} onChange={e => setUermessage(e.target.value)} placeholder="Message for us" required />
-                <input id="submit" type="submit" value="SUBMIT" />
+                <input id="submit" type="submit" value="SEND" />
             </form>
 
 

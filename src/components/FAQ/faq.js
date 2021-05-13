@@ -12,11 +12,11 @@ const Question = ({ question, answer }) => {
 
     return (
         <div className='question'>
-            <div className={!expanded ? "question-box" : "extended-questionbox"}>
-                <p className="faqquestion" onClick={() => setExpanded(!expanded)} >
+            <div className={!expanded ? "question-box" : "extended-questionbox"} onClick={() => setExpanded(!expanded)}>
+                <p className="faqquestion" >
                     {question}
                 </p>
-                <button className='btn' onClick={() => setExpanded(!expanded)}>
+                <button className='btn' >
                     {expanded ? <FontAwesomeIcon className="faicon" icon={faAngleUp} /> : <FontAwesomeIcon className="faicon" icon={faAngleDown} />}
                 </button>
             </div>

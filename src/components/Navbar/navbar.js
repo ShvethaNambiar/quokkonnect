@@ -51,7 +51,7 @@ const NavBar = () => {
         scroller.scrollTo(section, {
             duration: 800,
             delay: 0,
-            offset: -100,
+            offset: -80,
             smooth: 'easeInOutQuart'
         })
     }
