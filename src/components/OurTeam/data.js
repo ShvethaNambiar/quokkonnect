@@ -9,18 +9,18 @@ const data = [
     {
         id: 1,
         name: "Shvetha Nambiar",
-        country:"India",
+        country: "India",
         image: Shvetha,
         links: {
             linkedin: "https://www.linkedin.com/in/shvetha-nambiar-46074b1a5/",
-            instagram: "https://www.instagram.com/shvethaaaa/",
+            instagram: "https://www.instagram.com/ahtevhs/",
             email: "mailto:shvethanambiar@gmail.com"
         },
     },
     {
         id: 2,
         name: "Yash Rajgure",
-        country:"India",
+        country: "India",
         image: Yash,
         links: {
             linkedin: "https://www.linkedin.com/in/yash-rajgure-b695371b0/",
@@ -31,7 +31,7 @@ const data = [
     {
         id: 3,
         name: "Sam Yiheng",
-        country:"Germany",
+        country: "Germany",
         image: Sam,
         links: {
             linkedin: "https://www.linkedin.com/in/cenyiheng/",
@@ -42,7 +42,7 @@ const data = [
     {
         id: 4,
         name: "Jadie Luo",
-        country:"Hong Kong",
+        country: "Hong Kong",
         image: Jadie,
         links: {
             linkedin: "https://www.linkedin.com/in/jadie-luo-3b657176/",
@@ -53,7 +53,7 @@ const data = [
     {
         id: 5,
         name: "Anita Floridi",
-        country:"Italy",
+        country: "Italy",
         image: Anita,
         links: {
             linkedin: "",
@@ -64,7 +64,7 @@ const data = [
     {
         id: 6,
         name: "Kartika Resiandi",
-        country:"Japan",
+        country: "Japan",
         image: Kartika,
         links: {
             linkedin: "https://www.linkedin.com/in/kartika-findra-resiandi-729b17118/",

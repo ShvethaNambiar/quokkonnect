@@ -6,22 +6,22 @@ import { faAt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import data from './data.js'
 
 
-const TeamCard=({member})=>{
-    return(
+const TeamCard = ({ member }) => {
+    return (
         <div className="member-card">
             <div className="card-container">
                 <figure className="img-container">
                     <img src={member.image} alt={member.name} className="img" />
-                    <figcaption className="links    ">
-                        <a className='linkedin' href={member.links.linkedin==""?null:member.links.linkedin} target='_blank' rel='noopener noreferrer'>
+                    <figcaption className="links">
+                        {member.links.linkedin == "" ? null : (<a className='linkedin' href={member.links.linkedin} target='_blank' rel='noopener noreferrer'>
                             <FontAwesomeIcon icon={faLinkedin} />
-                        </a>
-                        <a className='instagram' href={member.links.instagram==""?null:member.links.instagram} target='_blank' rel='noopener noreferrer'>
+                        </a>)}
+                        {member.links.instagram == "" ? null : (<a className='instagram' href={member.links.instagram} target='_blank' rel='noopener noreferrer'>
                             <FontAwesomeIcon icon={faInstagram} />
-                        </a>
-                        <a className='email' href={member.links.email==""?null:member.links.email} target='_blank' rel='noopener noreferrer'>
+                        </a>)}
+                        {member.links.email == "" ? null : (<a className='email' href={member.links.email} target='_blank' rel='noopener noreferrer'>
                             <FontAwesomeIcon icon={faEnvelope} />
-                        </a>
+                        </a>)}
                     </figcaption>
                 </figure>
                 <div className="details">
@@ -33,12 +33,12 @@ const TeamCard=({member})=>{
     )
 }
 
-const OurTeam=()=>{
-    return(
+const OurTeam = () => {
+    return (
         <div id="ourteam">
             <h2 className="heading" >Our Team</h2>
             <div className="layout">
-                {data.map(member => <TeamCard key={member.id} member={member}/>)}
+                {data.map(member => <TeamCard key={member.id} member={member} />)}
             </div>
         </div>
     )

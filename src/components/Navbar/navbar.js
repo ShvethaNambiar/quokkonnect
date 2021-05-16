@@ -26,7 +26,7 @@ const NavBar = () => {
             }
         })
         return () => {
-        document.removeEventListener("scroll", listener)
+            document.removeEventListener("scroll", listener)
         }
     }, [scrollOnTop])
 
@@ -102,18 +102,18 @@ const NavBar = () => {
     }
 
     return (
-        <nav className='navbar' style={{backgroundColor: `${scrollOnTop?'transparent':'#FFD8D8'}`}}>
+        <nav className='navbar' style={{ backgroundColor: `${scrollOnTop ? 'transparent' : '#FFD8D8'}` }}>
             {/* style={{ opacity: `${visible ? '1' : '0'}`, top: `${visible ? '0' : '-7rem'}` }} */}
-            <Link className='nav-logo' style={{opacity: `${scrollOnTop?'0':'1'}`}} to='/'>
+            <Link className='nav-logo' style={{ opacity: `${scrollOnTop ? '0' : '1'}` }} to='/'>
                 <img src={logo} alt='logo' />
             </Link>
             <div className='nav-links' id='navbar'>
-                <Link className='nav-option' to='/'>Home</Link>
-                <Link className='nav-option' to="/#goal">Our Goal</Link>
-                <Link className='nav-option' to='/#product'>Product</Link>
-                <Link className='nav-option' to='/#faq'>FAQ's</Link>
-                <Link className='nav-option' to='/#whoarewe'>Our team</Link>
-                <Link className='nav-option' to='/#contactus'>Contact Us</Link>
+                <Link className='nav-option' to='/quokkonnect'>Home</Link>
+                <Link className='nav-option' to="/quokkonnect/#goal">Our Goal</Link>
+                <Link className='nav-option' to='/quokkonnect/#product'>Product</Link>
+                <Link className='nav-option' to='/quokkonnect/#faq'>FAQ's</Link>
+                <Link className='nav-option' to='/quokkonnect/#whoarewe'>Our team</Link>
+                <Link className='nav-option' to='/quokkonnect/#contactus'>Contact Us</Link>
             </div>
             <input id='checkbox' type='checkbox' className='checkbox' />
             <button className='nav-btn' onClick={() => handleClick()}><span className='nav-icon'>&nbsp;</span></button>
