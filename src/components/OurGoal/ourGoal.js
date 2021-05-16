@@ -18,7 +18,7 @@ const OurGoal = () => {
                     <p>We aim to contribute to the Target 4.7 of the United Nations’ SDG 4 (Sustainable Development Goal 4),  which focuses on ensuring all learners aquire knowledge and skills to promote sustainable development.</p>
                     <a className="link" href="https://sdgs.un.org/goals/goal4" target="_blank">Click here to know more</a>
                 </div>
-                <div className="goal-img"><img className="svg-img" src={Goal2}></img></div>
+                <div className="goal-img"><img className="svg-img" src={Goal2} alt="goal"></img></div>
             </div>
         </div>
     )

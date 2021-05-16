@@ -6,8 +6,8 @@ import Product4 from '../../assets/product-4.svg'
 import Product5 from '../../assets/product-5.svg'
 import Product6 from '../../assets/product-6.svg'
 
-const Product=()=>{
-    return(
+const Product = () => {
+    return (
         <div id="product">
             <div className="product-1">
                 <h2 className="heading">What is Quokkonnect?</h2>
@@ -23,12 +23,12 @@ const Product=()=>{
                     </div>
                 </div>
                 <div className="product-img-1">
-                    <div className="feature-img"><img className="svg-img" src={Product1}></img></div>
-                    <div className="feature-img"><img className="svg-img" src={Product2}></img></div>
-                    <div className="feature-img"><img className="svg-img" src={Product3}></img></div>
-                    <div className="feature-img"><img className="svg-img" src={Product4}></img></div>
-                    <div className="feature-img"><img className="svg-img" src={Product5}></img></div>
-                    <div className="feature-img"><img className="svg-img" src={Product6}></img></div>
+                    <div className="feature-img"><img className="svg-img" src={Product1} alt="product"></img></div>
+                    <div className="feature-img"><img className="svg-img" src={Product2} alt="product"></img></div>
+                    <div className="feature-img"><img className="svg-img" src={Product3} alt="product"></img></div>
+                    <div className="feature-img"><img className="svg-img" src={Product4} alt="product"></img></div>
+                    <div className="feature-img"><img className="svg-img" src={Product5} alt="product"></img></div>
+                    <div className="feature-img"><img className="svg-img" src={Product6} alt="product"></img></div>
                 </div>
             </div>
         </div>

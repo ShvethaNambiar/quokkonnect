@@ -16,11 +16,11 @@ const NavBar = () => {
         listener = document.addEventListener("scroll", e => {
             var scrolled = document.scrollingElement.scrollTop
             if (scrolled >= 120) {
-                if (scrollOnTop != false) {
+                if (scrollOnTop !== false) {
                     setscrollOnTop(false)
                 }
             } else {
-                if (scrollOnTop != true) {
+                if (scrollOnTop !== true) {
                     setscrollOnTop(true)
                 }
             }

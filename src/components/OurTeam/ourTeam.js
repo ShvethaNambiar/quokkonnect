@@ -2,7 +2,7 @@ import './ourTeam.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faAt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import data from './data.js'
 
 
@@ -13,13 +13,13 @@ const TeamCard = ({ member }) => {
                 <figure className="img-container">
                     <img src={member.image} alt={member.name} className="img" />
                     <figcaption className="links">
-                        {member.links.linkedin == "" ? null : (<a className='linkedin' href={member.links.linkedin} target='_blank' rel='noopener noreferrer'>
+                        {member.links.linkedin === "" ? null : (<a className='linkedin' href={member.links.linkedin} target='_blank' rel='noopener noreferrer'>
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>)}
-                        {member.links.instagram == "" ? null : (<a className='instagram' href={member.links.instagram} target='_blank' rel='noopener noreferrer'>
+                        {member.links.instagram === "" ? null : (<a className='instagram' href={member.links.instagram} target='_blank' rel='noopener noreferrer'>
                             <FontAwesomeIcon icon={faInstagram} />
                         </a>)}
-                        {member.links.email == "" ? null : (<a className='email' href={member.links.email} target='_blank' rel='noopener noreferrer'>
+                        {member.links.email === "" ? null : (<a className='email' href={member.links.email} target='_blank' rel='noopener noreferrer'>
                             <FontAwesomeIcon icon={faEnvelope} />
                         </a>)}
                     </figcaption>
