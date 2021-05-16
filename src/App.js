@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route exact path='/quokkonnect' component={HomePage}></Route>
+          <Route exact path='/' component={HomePage}></Route>
         </Switch>
       </BrowserRouter>
 
