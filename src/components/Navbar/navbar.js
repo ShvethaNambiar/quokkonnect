@@ -8,11 +8,12 @@ import logo from '../../assets/LOGO.svg'
 
 const NavBar = () => {
     const location = useLocation()
-    const [visible, setVisible] = useState(false)
-    let listener = null
+    // const [visible, setVisible] = useState(false)
+
     const [scrollOnTop, setscrollOnTop] = useState(true)
 
     useEffect(() => {
+        let listener = null
         listener = document.addEventListener("scroll", e => {
             var scrolled = document.scrollingElement.scrollTop
             if (scrolled >= 120) {
@@ -59,7 +60,7 @@ const NavBar = () => {
     const navbar = document.getElementById('navbar')
     const navBg = document.getElementsByClassName('nav-bg')[0]
     const navCheckbox = document.getElementById('checkbox')
-    var isScrolling = null
+    // var isScrolling = null
     window.addEventListener('scroll', (e) => {
         if (navbar && navBg && navCheckbox) {
             navbar.classList.remove('nav-visible')
@@ -70,11 +71,7 @@ const NavBar = () => {
             navBg.style.height = '6rem'
             navCheckbox.checked = false
         }
-        setVisible(false)
-        window.clearTimeout(isScrolling)
-        isScrolling = setTimeout(() => {
-            setVisible(true)
-        }, 300)
+
     }, false)
 
     // Nav-Bar mobile view btn

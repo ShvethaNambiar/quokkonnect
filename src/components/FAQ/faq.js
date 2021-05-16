@@ -33,7 +33,7 @@ const Question = ({ question, answer }) => {
     )
 }
 const Faq = () => {
-    const [questions, setQuestions] = useState(FaqData)
+    const [questions] = useState(FaqData)
 
     return (
         <div className="faq-container">
