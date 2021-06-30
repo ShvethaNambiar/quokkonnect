@@ -1,6 +1,6 @@
 import './contactUs.scss'
 import React, { useState } from 'react'
-import contactUsImg from '../../assets/contactUs-img.png'
+import contactUsImg from '../../assets/contactUs-img.jpg'
 import contactUsBg from '../../assets/contactUs-bg.svg'
 import emailjs from 'emailjs-com'
 // import configData from '/config.json'

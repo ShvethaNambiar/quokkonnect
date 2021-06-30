@@ -2,7 +2,7 @@ import Shvetha from '../../assets/photos/shvetha.jpg'
 import Yash from '../../assets/photos/yash.jpg'
 import Sam from '../../assets/photos/sam.jpg'
 import Jadie from '../../assets/photos/jadie.JPG'
-import Anita from '../../assets/photos/anita.jpeg'
+import Anita from '../../assets/photos/anita.jpg'
 import Kartika from '../../assets/photos/kartika.jpg'
 
 const data = [
