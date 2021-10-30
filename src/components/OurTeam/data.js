@@ -50,28 +50,28 @@ const data = [
             email: "mailto:luoj2@carleton.edu"
         },
     },
-    {
-        id: 5,
-        name: "Anita Floridi",
-        country: "Italy",
-        image: Anita,
-        links: {
-            linkedin: "",
-            instagram: "https://www.instagram.com/anitafloridi/",
-            email: "mailto:anitafloridi.1@gmail.com"
-        },
-    },
-    {
-        id: 6,
-        name: "Kartika Resiandi",
-        country: "Japan",
-        image: Kartika,
-        links: {
-            linkedin: "https://www.linkedin.com/in/kartika-findra-resiandi-729b17118/",
-            instagram: "https://www.instagram.com/kartikafindra/",
-            email: "mailto:kartindra@gmail.com"
-        },
-    }
+    // {
+    //     id: 5,
+    //     name: "Anita Floridi",
+    //     country: "Italy",
+    //     image: Anita,
+    //     links: {
+    //         linkedin: "",
+    //         instagram: "https://www.instagram.com/anitafloridi/",
+    //         email: "mailto:anitafloridi.1@gmail.com"
+    //     },
+    // },
+    // {
+    //     id: 6,
+    //     name: "Kartika Resiandi",
+    //     country: "Japan",
+    //     image: Kartika,
+    //     links: {
+    //         linkedin: "https://www.linkedin.com/in/kartika-findra-resiandi-729b17118/",
+    //         instagram: "https://www.instagram.com/kartikafindra/",
+    //         email: "mailto:kartindra@gmail.com"
+    //     },
+    // }
 ]
 
 export default data;
