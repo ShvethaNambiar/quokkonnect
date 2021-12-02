@@ -65,6 +65,7 @@
             width: 100vw;
             min-height: 100vh;
             right: 0;
+            top: 40vh;
             bottom: 10vh;
             display: flex;
             align-items: center;
@@ -87,6 +88,20 @@
             .main-logo {
                 display: none;
             }
+        }
+
+        .home_links {
+            width: 90%;
+            padding-top: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        #homebutton {
+            font-size: 1.1rem;
+            padding: 0.1rem 0.5rem;
+            border-radius: 30px;
+            color: #ffffff;
+            margin-top: 0.3rem;
         }
     }
 }

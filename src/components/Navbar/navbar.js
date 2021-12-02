@@ -16,7 +16,7 @@ const NavBar = () => {
         let listener = null
         listener = document.addEventListener("scroll", e => {
             var scrolled = document.scrollingElement.scrollTop
-            if (scrolled >= 120) {
+            if (scrolled >= 20) {
                 if (scrollOnTop !== false) {
                     setscrollOnTop(false)
                 }

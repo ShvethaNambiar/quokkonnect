@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import HomePage from './pages/homepage';
+import CoursePage from './pages/course page/coursepage'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={HomePage}></Route>
+          <Route exact path='/innovation_and_sustainable_development_challenge' component={CoursePage}></Route>
         </Switch>
       </BrowserRouter>
 

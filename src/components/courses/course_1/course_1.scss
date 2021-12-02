@@ -1,0 +1,241 @@
+// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@import '../../../styles/variables.scss';
+@import '../../../styles/components.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $textfont;
+    // background-color: #f2f2f2f2;
+    // font-size: 1.1rem;
+}
+
+.heading_2 {
+    @include heading;
+    margin: 0;
+    padding: 5rem 3rem 0 3rem;
+    font-size: 2rem;
+}
+
+.heading_course {
+    @include heading;
+    margin: 0;
+    padding: 0 3rem;
+    font-size: 2.5rem;
+}
+
+.course_1_h2 {
+    @include heading;
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.timeline {
+    max-width: 900px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 0 3rem 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 3px;
+        background-color: #ff6a6a;
+        height: 100%;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 18px 30px;
+        background-color: white;
+        border-radius: 5px;
+        position: relative;
+        width: 421px;
+        box-shadow: 0 2px 8px 0 #242e4c59;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #ff6a6a;
+            border-radius: 50%;
+            transform: translateY(-50%);
+
+        }
+
+        &:nth-child(odd) {
+            margin-left: auto;
+
+            &::after {
+                left: -10px;
+            }
+
+            &::before {
+                top: 50%;
+                left: -39px;
+            }
+
+        }
+
+
+        &:nth-child(even) {
+            align-items: flex-end;
+
+            .content_p {
+                text-align: right;
+            }
+
+            &::after {
+                right: -10px;
+
+            }
+
+            &::before {
+                top: 50%;
+                right: -39px;
+            }
+
+        }
+
+        .carousel__image {
+            width: 100%;
+        }
+    }
+}
+
+.content {
+
+
+    // &_date {
+    //     margin-bottom: 10px;
+    //     font-weight: bold;
+    //     font-size: 14px;
+    //     color: #848892;
+    // }
+
+    &_p {
+        color: #242e4c;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.goback {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 3rem;
+}
+
+#submit-2 {
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 2rem;
+    background: #FF6873;
+    box-shadow: 2px 2px 5px rgba(255, 104, 115, 0.37);
+    border-radius: 35px;
+    color: #ffffff;
+    margin-top: 1rem
+}
+
+.regnow {
+    display: flex;
+    justify-content: right;
+    padding: 0rem 3rem 0 0;
+}
+
+.regnow_2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1030px) {
+    .body {
+        // @include mobile-para-text;
+        // text-align: left
+    }
+
+    .heading_course {
+        @include mobile-heading;
+        padding: 0 0 0 2rem;
+        margin: 0
+    }
+
+    .heading_2 {
+        @include mobile-heading;
+        padding: 5rem 0 0 2rem;
+        margin: 0
+    }
+
+    .course_1_h2 {
+        padding: 1rem 0 0 0;
+    }
+
+    .timeline {
+        gap: 1rem;
+        padding: 1rem 1rem 2rem 1rem;
+
+        &::after {
+            display: none;
+        }
+
+        &__content {
+            width: 100%;
+            padding: 18px 20px;
+
+            &::after {
+                display: none;
+            }
+
+            &::before {
+                display: none;
+            }
+
+            &:nth-child(even) {
+                .content_p {
+                    text-align: left;
+                }
+            }
+
+            &:nth-child(odd) {
+                .content_p {
+                    text-align: left;
+                }
+            }
+        }
+
+        .carousel__image {
+            height: 60%;
+        }
+    }
+
+    .goback {
+        padding: 0 0 2rem 0;
+    }
+}

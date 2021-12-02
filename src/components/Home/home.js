@@ -1,5 +1,6 @@
 import './home.scss'
 import './home-mobile.scss'
+import { Link } from 'react-router-dom'
 
 import Homeimg from '../../assets/img.png'
 import Homebg from '../../assets/home-back.svg'
@@ -27,6 +28,12 @@ const Home = () => {
             <div className="home-main">
                 <h2 className="mainheading">Welcome to Quokkonnect</h2>
                 <h2 className="subheading">Connect, learn and grow</h2>
+                <div className="home_links">
+                    <Link to='/innovation_and_sustainable_development_challenge' id="homebutton">
+                        <a >Check out our course</a>
+                    </Link>
+                    <a id="homebutton" href='https://forms.gle/A6RabxfmbhVLdtTu8' target="_blank">Register Now</a>
+                </div>
                 <div ><img className="main-logo" src={Logo} alt="logo" /></div>
             </div>
         </div>
