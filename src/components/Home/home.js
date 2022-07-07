@@ -32,7 +32,7 @@ const Home = () => {
                     <Link to='/innovation_and_sustainable_development_challenge' id="homebutton">
                         <a >Check out our course</a>
                     </Link>
-                    <a id="homebutton" href='https://forms.gle/A6RabxfmbhVLdtTu8' target="_blank">Register Now</a>
+                    {/* <a id="homebutton" href='https://forms.gle/A6RabxfmbhVLdtTu8' target="_blank">Register Now</a> */}
                 </div>
                 <div ><img className="main-logo" src={Logo} alt="logo" /></div>
             </div>

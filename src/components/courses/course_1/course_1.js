@@ -17,7 +17,7 @@ const Course_1 = () => {
             <h2 className="heading_2">Course: </h2>
             <h2 className="heading_course">Innovation and Sustainable Development</h2>
             <div className="regnow">
-                <a id="submit-2" href='https://forms.gle/A6RabxfmbhVLdtTu8' target="_blank">Register Now</a>
+                {/* <a id="submit-2" href='https://forms.gle/A6RabxfmbhVLdtTu8' target="_blank">Register Now</a> */}
             </div>
             <h3 className="course_1_h2"> Story line </h3>
             <div className="timeline">
@@ -73,7 +73,7 @@ const Course_1 = () => {
                 </div>
             </div>
             <div className="regnow_2">
-                <a id="submit-2" href='https://forms.gle/A6RabxfmbhVLdtTu8' target="_blank">Register Now</a>
+                {/* <a id="submit-2" href='https://forms.gle/A6RabxfmbhVLdtTu8' target="_blank">Register Now</a> */}
             </div>
             <div className="goback">
                 <Link to='/'><input id="submit-2" type="submit" value="Go Back" /></Link>
