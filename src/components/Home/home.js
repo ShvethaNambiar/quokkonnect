@@ -29,7 +29,7 @@ const Home = () => {
                 <h2 className="mainheading">Welcome to Quokkonnect</h2>
                 <h2 className="subheading">Connect, learn and grow</h2>
                 <div className="home_links">
-                    <Link to='/innovation_and_sustainable_development_challenge' id="homebutton">
+                    <Link to='/quokkonnect/innovation_and_sustainable_development_challenge' id="homebutton">
                         <a >Check out our course</a>
                     </Link>
                     {/* <a id="homebutton" href='https://forms.gle/A6RabxfmbhVLdtTu8' target="_blank">Register Now</a> */}

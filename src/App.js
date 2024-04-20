@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path='/quokkonnect' component={HomePage}></Route>
-          <Route exact path='/innovation_and_sustainable_development_challenge' component={CoursePage}></Route>
+          <Route exact path='/quokkonnect/innovation_and_sustainable_development_challenge' component={CoursePage}></Route>
         </Switch>
       </BrowserRouter>
 

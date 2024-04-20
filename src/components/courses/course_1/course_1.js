@@ -76,7 +76,7 @@ const Course_1 = () => {
                 {/* <a id="submit-2" href='https://forms.gle/A6RabxfmbhVLdtTu8' target="_blank">Register Now</a> */}
             </div>
             <div className="goback">
-                <Link to='/'><input id="submit-2" type="submit" value="Go Back" /></Link>
+                <Link to='/quokkonnect'><input id="submit-2" type="submit" value="Go Back" /></Link>
             </div>
 
 

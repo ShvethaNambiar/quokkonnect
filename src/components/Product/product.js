@@ -18,7 +18,7 @@ const Product = () => {
                 <div className="product-video">
                     <div className="video-border">
                         <video loop className="video" controls preload >
-                            <source type='video/mp4' src="/videos/quokkonnect-video.mp4" />
+                            <source type='video/mp4' src="/quokkonnect/videos/quokkonnect-video.mp4" />
                         </video>
                     </div>
                 </div>
