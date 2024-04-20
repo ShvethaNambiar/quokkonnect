@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route exact path='/' component={HomePage}></Route>
+          <Route exact path='/quokkonnect' component={HomePage}></Route>
           <Route exact path='/innovation_and_sustainable_development_challenge' component={CoursePage}></Route>
         </Switch>
       </BrowserRouter>
