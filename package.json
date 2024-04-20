@@ -26,8 +26,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "start": "set SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "build": "set SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
     "test": "react-scripts test",
@@ -53,6 +53,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.1.1",
     "sass": "^1.75.0"
   }
 }
